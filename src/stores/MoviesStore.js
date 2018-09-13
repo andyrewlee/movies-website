@@ -60,9 +60,9 @@ export default class MoviesStore {
       this.mode = MODE.POPULAR;
     } else {
       this.mode = MODE.TITLE;
-      this.currentPage = 1;
     }
 
+    this.currentPage = 1;
     this.query = query;
     await this.reload();
   }
