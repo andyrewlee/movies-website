@@ -17,3 +17,9 @@
     width: 200px;
     border-radius: 4px;
 }
+
+@media screen and (max-width: 750px) {
+    .Movie__image-container {
+        display: none;
+    }
+}
