@@ -16,7 +16,7 @@ export default class Movie extends Component {
     return (
       <div className="Movie">
         <div className="Movie__image-container">
-          <img className="Movie__image" src={poster} alt={"poster"} />
+          <img className="Movie__image" src={poster} alt={movie.title} />
         </div>
         <div className="Movie__detail-container">
           <MovieDescription movie={movie} />

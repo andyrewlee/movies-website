@@ -8,6 +8,8 @@
 }
 
 .Movie__image-container {
+    min-width: 200px;
+    background-color: #eee;
     margin-right: 15px;
 }
 
