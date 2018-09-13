@@ -16,7 +16,7 @@ export default class MovieDBClient {
   }
 
   async getMovies(config) {
-    const url = `${API_URL}/search/movie?api_key=${this.apiKey}&query=${config.query}`;
+    const url = `${API_URL}/search/movie?api_key=${this.apiKey}&query=${config.query}&page=${config.page}`;
     return await this.handleRequest(url);
   }
 

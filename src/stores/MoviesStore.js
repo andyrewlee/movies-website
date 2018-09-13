@@ -55,18 +55,19 @@ export default class MoviesStore {
     await this.reload();
   }
 
-  async searchMovieTitle(query) {
+  @action async searchMovieTitle(query) {
     if (query === '') {
       this.mode = MODE.POPULAR;
     } else {
       this.mode = MODE.TITLE;
+      this.currentPage = 1;
     }
 
     this.query = query;
     await this.reload();
   }
 
-  async initialize() {
+  @action async initialize() {
     if (this.mode === MODE.POPULAR) {
       this.popularRes = await this.client.getPopularMovies({
         page: this.currentPage,
@@ -85,7 +86,7 @@ export default class MoviesStore {
     }
   }
 
-  async reload() {
+  @action async reload() {
     if (this.mode === MODE.POPULAR) {
       this.popularRes = await this.client.getPopularMovies({
         page: this.currentPage,
@@ -93,6 +94,7 @@ export default class MoviesStore {
     } else if (this.mode === MODE.TITLE) {
       this.queriedRes = await this.client.getMovies({
         query: this.query,
+        page: this.currentPage,
       });
     }
   }

@@ -20,6 +20,7 @@ export default class Pagination extends Component {
           pageCount={toJS(this.props.moviesStore.pageCount)}
           marginPagesDisplayed={1}
           pageRangeDisplayed={3}
+          forcePage={this.props.moviesStore.currentPage - 1}
           onPageChange={this.handlePageClick}
         />
       </div>
