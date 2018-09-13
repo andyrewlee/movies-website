@@ -10,7 +10,7 @@ export default class ExtraDetails extends Component {
       <div className="ExtraDetails">
         <div className="ExtraDetails__row">
           <div className="ExtraDetails__detail">
-            <div className="ExraDetails__label">
+            <div className="ExtraDetails__label">
               Release Date
             </div>
             <div className="ExtraDetails__value">
@@ -18,7 +18,7 @@ export default class ExtraDetails extends Component {
             </div>
           </div>
           <div className="ExtraDetails__detail">
-            <div className="ExraDetails__label">
+            <div className="ExtraDetails__label">
               Vote Average
             </div>
             <div className="ExtraDetails__value">
@@ -28,7 +28,7 @@ export default class ExtraDetails extends Component {
         </div>
         <div className="ExtraDetails__row">
           <div className="ExtraDetails__detail">
-            <div className="ExraDetails__label">
+            <div className="ExtraDetails__label">
               Popularity
             </div>
             <div className="ExtraDetails__value">
@@ -36,7 +36,7 @@ export default class ExtraDetails extends Component {
             </div>
           </div>
           <div className="ExtraDetails__detail">
-            <div className="ExraDetails__label">
+            <div className="ExtraDetails__label">
               Vote Count
             </div>
             <div className="ExtraDetails__value">
