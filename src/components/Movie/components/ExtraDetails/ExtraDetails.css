@@ -1,0 +1,24 @@
+.ExtraDetails {
+    display: flex;
+}
+
+.ExtraDetails__row {
+    flex: 1;
+}
+
+.ExtraDetails__detail {
+    margin-bottom: 15px;
+}
+
+.ExtraDetails__label {
+    margin-bottom: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ExtraDetails__value {
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #4A90E2;
+}

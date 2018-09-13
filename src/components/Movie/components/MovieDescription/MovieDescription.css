@@ -1,0 +1,16 @@
+.MovieDescription__title {
+    font-size: 24px;
+    margin: 10px 0 0 0;
+}
+
+.MovieDescription__genres {
+    margin: 10px 0;
+    color: #777;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.MovieDescription__overview {
+    margin: 15px 0 20px 0;
+    line-height: 1.5;
+}

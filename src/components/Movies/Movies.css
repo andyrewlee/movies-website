@@ -1,0 +1,15 @@
+.Movies {
+    flex: 1;
+    overflow: scroll;
+    position: absolute;
+    top: 78px;
+    padding-top: 15px;
+    bottom: 0;
+    width: 100%;
+}
+
+.Movies__content {
+    max-width: 750px;
+    padding-bottom: 120px;
+    margin: 0 auto;
+}
