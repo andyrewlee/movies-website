@@ -7,7 +7,6 @@ const MODE = {
 };
 
 export default class MoviesStore {
-  @observable counter = 0;
   @observable popularRes = {};
   @observable queriedRes = {};
   @observable genresHash = {};
@@ -44,10 +43,6 @@ export default class MoviesStore {
     } else if (this.mode === MODE.TITLE) {
       return this.queriedMovies;
     }
-  }
-
-  @action incrementCounter() {
-    this.counter += 1;
   }
 
   @action async setCurrentPage(newPage) {
